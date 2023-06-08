@@ -29,12 +29,15 @@ const Register = () => {
   };
 
   return (
-    <div className="bg-light w-50 rounded-3 border shadow-lg mx-auto p-5">
+    <div
+      className="bg-light rounded-3 border shadow-lg mx-auto p-5"
+      style={{ maxWidth: "700px" }}
+    >
       <Toaster />
       <form onSubmit={handleSubmit(onSubmit)} noValidate>
         <h2 className="text-center mb-3">Register</h2>
-        <div className="row mb-3">
-          <div className="col">
+        <div className="row row-cols-1 row-cols-md-2">
+          <div className="col mb-3">
             <input
               type="text"
               className="form-control"
@@ -49,7 +52,7 @@ const Register = () => {
             />
             <small className="text-danger">{errors.firstname?.message}</small>
           </div>
-          <div className="col">
+          <div className="col mb-3">
             <input
               type="text"
               className="form-control"
@@ -65,8 +68,8 @@ const Register = () => {
             <small className="text-danger">{errors.lastname?.message}</small>
           </div>
         </div>
-        <div className="row mb-3">
-          <div className="col">
+        <div className="row row-cols-1 row-cols-md-2">
+          <div className="col mb-3">
             <input
               type="email"
               className="form-control"
@@ -82,7 +85,7 @@ const Register = () => {
             />
             <small className="text-danger">{errors.email?.message}</small>
           </div>
-          <div className="col">
+          <div className="col mb-3">
             <input
               type="text"
               className="form-control"
