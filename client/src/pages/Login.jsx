@@ -25,12 +25,11 @@ const Login = () => {
   };
 
   return (
-    <div style={{ maxWidth: "700px" }}>
-      <form
-        className="p-4 p-md-5 border rounded-3 bg-body-tertiary mx-auto shadow-lg"
-        onSubmit={handleSubmit(onSubmit)}
-        noValidate
-      >
+    <div
+      className="bg-light rounded-3 border shadow-lg mx-auto p-5"
+      style={{ maxWidth: "700px" }}
+    >
+      <form onSubmit={handleSubmit(onSubmit)} noValidate>
         <Toaster />
         <h2 className="text-center mb-3">Login</h2>
         <div className="form-floating mb-3">
