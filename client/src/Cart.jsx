@@ -3,7 +3,9 @@ import axios from "axios";
 import { toast, Toaster } from "react-hot-toast";
 
 const Cart = ({ cartItems }) => {
-  const API = axios.create({ baseURL: "http://localhost:5000" });
+  const API = axios.create({
+    baseURL: "https://merntask-backend.onrender.com",
+  });
   const user = useState(JSON.parse(localStorage.getItem("profile")));
 
   const handleSaveToMongoDB = async () => {
